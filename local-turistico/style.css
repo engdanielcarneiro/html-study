@@ -90,6 +90,7 @@ img + .subtitle {
     img {
         height: 350px;    
         margin-bottom: 20px;
+        object-fit: cover;
     }
 }
 
