@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --background-default: #F5F4F0;
+    --border-primary: #D9D9D9;
+    --text-tertiary: #696969;
+    --text-secondary: #333333;
+    --text-primary: #1B1B1B;
+
+    --accent-blue: #0C51A7;
+    --accent-orange: #E95E10;
+    --accent-pink: #E5245E;
+    --accent-purple: #591B98;
+
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    background-color: var(--background-default);
+    padding: 88px 80px 65px 80px;
+}
+
+main {
+    margin: auto;
+    max-width: 1120px;
+}
+
+h1{
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h1,h2,h3, .headline {
+    font-weight: bold;
+}
+
+.headline, p, .subtitle {
+    font-size: 16px;
+}
+
+.headline {
+    text-transform: uppercase;
+    color: var(--accent-orange);
+}
+
+img {
+    width: 1120px;
+    border-radius: 28px;
+}
+
+h1 + img {
+    margin-top: 44px;
+}
+
+img + .subtitle {
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
+
+.headline + h1 {
+    margin-top: 8px;
+}
+
+.headline + h2 {
+    margin-top: 2px;
+}
+
+.subtitle {
+    text-align: center;
+    font-style: italic;
+    color: var(--text-secondary);
+}
+
+#history-lovers {
+    border-top: 1px solid var(--border-primary);
+    border-bottom: 1px solid var(--border-primary);
+    padding: 64px 0px 40px 0px;
+
+    img {
+        height: 350px;    
+        margin-bottom: 20px;
+    }
+}
+
+h2 + p {
+    margin: 8px 0px 64px 0px;
+}
+
+p {
+    color: var(--text-secondary);
+}
+
+h3 + p {
+    margin: 4px 0px 15px 0px;
+}
+
+.good-for {
+    font-weight: bold;
+    color: var(--text-secondary);
+
+    ul {
+        padding-left: 25px;
+    }
+
+    li {
+        color: var(--accent-blue);
+        text-indent: -7px;
+    }
+
+    li + li {
+    color: var(--accent-pink);
+    }
+
+    li + li + li {
+        color: var(--accent-orange);
+    }
+
+    li::marker{
+        color: var(--text-secondary);
+    }
+}
+
+section + section {
+    margin-top: 48px;
+}
+
+footer {
+    text-align: center;
+    padding-top: 40px;
+    color: var(--text-secondary);
+
+    p + div {
+        margin-top: 58px;
+    }
+}
+
+img.icon {
+    width: 16px;    
+}
+
